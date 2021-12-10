@@ -13,4 +13,12 @@
     ),
     url(../img/nat-4.jpg);
   background-size: cover;
+
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  // ">" significa direct child que é so a PRIMEIRA child que vem em seguida
+  & > * {
+    transform: skewY(7deg);
+  }
 }
