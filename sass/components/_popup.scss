@@ -8,6 +8,7 @@
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.3s;
 
   &__content {
     @include absCenter;
@@ -17,6 +18,10 @@
     border-radius: 3px;
     display: table;
     overflow: hidden;
+    opacity: 0;
+    // esse translate ta sendo colocado na função de novo pq ele ja aparece no "@include" e nao podemos ter 2 vezes a função transform... entao a gente copia td pra mesma pro codigo nao dar o over-right
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.2s;
   }
 
   &__left {
@@ -53,5 +58,36 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+  }
+
+  //OPEN STATES
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  // esse proximo é pra dar o efeito do card vir do background towards us... foi dado o setting inicial no "content" pro card nao aparecer e depois esse comando abaixo pra aparecer
+  &:target &__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
