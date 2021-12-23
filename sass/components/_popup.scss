@@ -6,6 +6,8 @@
   left: 0;
   background-color: rgba($color-black, 0.8);
   z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
 
   &__content {
     @include absCenter;
@@ -37,5 +39,19 @@
   &__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
+
+    // prefixo pra funcionar nos browsers
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid $color-grey-light-2;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-2;
+
+    // esses prefixos sao pra funcionar em outros browsers
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 }
