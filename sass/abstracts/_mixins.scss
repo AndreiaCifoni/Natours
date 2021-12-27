@@ -26,8 +26,9 @@
 // - tab-land    1200px
 // - big-desktop    1800px
 
-// 1em = 16px
+// order: Base + typograpy > general layout > grid > page layout >components
 
+// 1em = 16px
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
@@ -48,7 +49,7 @@
   }
 
   @if $breakpoint == big-desktop {
-    @media (min-width: 112.5wm) {
+    @media (min-width: 112.5em) {
       @content;
     }
   }
