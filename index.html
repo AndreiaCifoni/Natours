@@ -421,11 +421,21 @@ live-server -->
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img
-          src="img/logo-green-small-2x.png"
-          alt="full logo"
-          class="footer__logo"
-        />
+        <!-- o "picture" serve pra colocar multiple sources pra imagem a ser exibida... no "source" pode ser colocado uma media query pra especificar qual imagem sera exibida naquela medida... dentro de cada "srcset" a gente coloca different density que sao dois caminhos pra mesma imagem e o browser que escolhe qual que vai ser exibido -->
+        <!-- responsive img, esse srcset manda as duas fotos e de acordo com a capacidade do aparelho, a tela vai escolher a melhor resolução pra ocupar menos espaco.. esse "1x" ou "2x" depois dos caminhos da foto sao pra identificar as resoluções usadas -->
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x 2x.png"
+            alt="full logo"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
