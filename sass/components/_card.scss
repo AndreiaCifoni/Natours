@@ -14,6 +14,7 @@
     left: 0;
     width: 100%;
     // essa proxima é pra esconder a parte de tras do cartao pra nao ser visivel quando da o flip
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     // esse overflow é pro canto da imagem nao ultrapassar o cartao, entao ele vai pegar o border-radius

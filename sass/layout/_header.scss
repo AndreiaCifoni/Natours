@@ -1,5 +1,5 @@
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -9,13 +9,20 @@
   background-size: cover;
   background-position: top;
   position: relative;
-  // esse webkit é pra funcionar em outros browsers
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    // esse webkit é pra funcionar em outros browsers
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
 
   // foi colocada essa segunda condição pra maior de 600px (37.5em) usar a imagem melhor, pq se for so por resolução e o cell tiver uma resolução boa, ele abriria a foto mais pesada e nao faz sentido
   // a medida que tem ue colocar em media query é sempre em EM, fazer a conversao
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  // tive que colocar essa primeira parte num "-webkit" pq nao é suportada pelo browser safari
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
