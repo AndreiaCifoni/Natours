@@ -13,7 +13,7 @@ The main code language, libraries and frameworks used in this project:
 
 ## Getting Started 
 
-No installation is required. To open the page, just download the files from github and double click in the file "index.html".
+No installation is required. To open the page, just click the link:  [Natours](https://andreiacifoni.github.io/Natours/)
 
 ## Usage
 
