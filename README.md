@@ -25,21 +25,21 @@ ______________________________________________
 ## Usage
 Natours start with this beautiful design and animation to show you how good it is to reconnect with nature.
 
-![Natours Home Page](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/natours6_v6cffk.jpg)
+![Natours Home Page](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/Natours/natours6_v6cffk.jpg)
 
 Through this website, you can see the benefits of taking a break from the city and also the testimonials of people who already used our services.
 
-![Benefits](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/natours7_yan3re.jpg)
+![Benefits](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/Natours/natours7_yan3re.jpg)
 
-![Testimonial](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/natours8_xfhhbh.jpg)
+![Testimonial](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/Natours/natours8_xfhhbh.jpg)
 
 The Natours page has some nice interactive design to show the most popular tours with all the information you need and the level of difficulty for the more adventurous ones.
 
-![Packages](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/natours9_gixkbk.jpg)
+![Packages](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/Natours/natours9_gixkbk.jpg)
 
 Don't miss the chance! book now your relaxing trip.
 
-![Book now!](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/natours10_kstdn7.jpg)
+![Book now!](https://res.cloudinary.com/deiacifoni/image/upload/v1667319940/projects/Natours/natours10_kstdn7.jpg)
 
 ______________________________________________
 ## Contact
